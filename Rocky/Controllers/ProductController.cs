@@ -55,7 +55,7 @@ namespace Rocky.Controllers
                 })
             };
 
-            if (Id==null)//This is for Insert
+            if (Id == null)//This is for Insert
             {
                 return View(productvm);
             }
@@ -135,7 +135,7 @@ namespace Rocky.Controllers
         public IActionResult DeletePost(int? Id)
         {
             var obj = _db.Categories.Find(Id);
-            if (obj==null)
+            if (obj == null)
             {
                 return NotFound();
             }
